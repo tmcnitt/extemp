@@ -1,0 +1,42 @@
+{
+  "name": "extemp",
+  "version": "1.0.0",
+  "description": "An extemp app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "rebuild": "electron-rebuild -f -w sqlite3",
+    "postinstall": "electron-builder install-app-deps",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder -lmw"
+  },
+  "build": {
+    "appId": "troyextemp",
+    "linux": {
+      "target": [
+        "AppImage",
+        "zip"
+      ]
+    },
+    "win": {
+      "target": "zip"
+    },
+    "mac": {
+      "target": "zip"
+    },
+    "files": [
+      "build/bundle.js",
+      "main.js",
+      "index.html"
+    ]
+  },
+  "author": "Troy McNitt <troy.mcnitt@gmail.com>",
+  "devDependencies": {
+    "electron": "4.0.3",
+    "electron-builder": "latest",
+    "electron-rebuild": "^1.8.4"
+  },
+  "dependencies": {
+    "sqlite3": "^4.0.6"
+  }
+}

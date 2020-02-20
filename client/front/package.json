@@ -1,0 +1,31 @@
+{
+  "name": "Automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:js": "eslint src/ --ignore-pattern /node_modules/ --cache",
+    "lint:js:fix": "eslint src/ --ignore-pattern /node_modules/ --fix --cache",
+    "run": "webpack --watch",
+    "build": "webpack --mode production"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.395.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "marked": "^0.6.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "sql.js": "^0.5.0",
+    "terser": "^3.14.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
+  }
+}
