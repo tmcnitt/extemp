@@ -9,3 +9,11 @@ The client is based on electron and react.js. It is designed to look very minima
 
 # Photo
 ![Image of Application](https://raw.githubusercontent.com/Troy-M/extemp/master/sample/demo.png?token=AC4QTFOAV2S7UHHKJRYULPS6K4G4O)
+
+# Installing
+ Run `cd ./server &&
+  python3 fetch.py &&
+  python3 server.py `
+  to get current articles and store to databse <br>
+  run `cd ./client && npm i && npm run start` to run the client <br>
+  Use IP http://localhost:80 and key demo in settings and hit update to pull the articles. 
