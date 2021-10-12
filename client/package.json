@@ -32,7 +32,7 @@
   },
   "author": "Troy McNitt <troy.mcnitt@gmail.com>",
   "devDependencies": {
-    "electron": "4.0.3",
+    "electron": "11.5.0",
     "electron-builder": "latest",
     "electron-rebuild": "^1.8.4"
   },
